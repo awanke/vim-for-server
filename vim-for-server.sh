@@ -1,7 +1,7 @@
 #!/bin/bash
 BASEDIR=$(dirname $0)
 cd $BASEDIR
-echo $BASEDIR
+echo crrrent_pwd=$BASEDIR
 CURRENT_DIR=`pwd`
 
 # curl https://raw.githubusercontent.com/wklken/vim-for-server/master/vimrc > ~/.vimrc
