@@ -8,5 +8,5 @@ CURRENT_DIR=`pwd`
 
 # unlink
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc $HOME/.vimrc.bundles; do [ -L $i ] && unlink $i ; done
-
 ln -s $CURRENT_DIR/vimrc ~/.vimrc
+echo install_vim-for-server_successfull!
