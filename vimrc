@@ -131,8 +131,9 @@ endif
 " ============================ theme and status line ============================
 
 " theme
-set background=dark
-colorscheme desert
+" set background=dark
+" set background=light
+" colorscheme desert " 出现一个黑条
 
 " set mark column color
 hi! link SignColumn   LineNr
@@ -141,7 +142,7 @@ hi! link ShowMarksHLu DiffChange
 
 " status line
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
-set laststatus=2   " Always show the status line - use 2 lines for the status bar
+set laststatus=2  " Always show the status line - use 2 lines for the status bar
 
 
 " ============================ specific file type ===========================
