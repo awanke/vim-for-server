@@ -21,7 +21,6 @@ cp -r pathogen.vim/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
 rm -rf pathogen.vim
 cd ~/.vim/bundle && \
 git clone git://github.com/tpope/vim-sensible.git
-cp -r nerdtree-4* ~/.vim/bundle/
 cp -r nerdtree-4* ~/.vim/bundle/nerdtree
 # git clone https://github.com/scrooloose/nerdtree.git
 #apt-vim
