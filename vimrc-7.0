@@ -1,0 +1,54 @@
+execute pathogen#infect()
+syntax on              "语法支持 syntax enable
+filetype plugin indent on
+" set nocompatible              " be iMproved, required
+" filetype off                  " required
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" let Vundle manage Vundle, required
+"Plugin 'VundleVim/Vundle.vim'
+" ################### 快速导航 ###################
+"目录导航
+"Plugin 'scrooloose/nerdtree'
+let NERDTreeIgnore=['\.pyc', '\.pyo', '\.swp', '\~'] " ignore
+" close vim if the only window left open is a NERDTree
+" auto open verdtree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" end
+" call vundle#end()            " required
+" filetype plugin indent on    " required
+
+" tab相关变更
+set tabstop=4     " 设置Tab键的宽度        [等同的空格个数]
+set shiftwidth=4  " 每一次缩进对应的空格数
+set softtabstop=4 " 按退格键时可以一次删掉 4 个空格
+set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
+set expandtab     " 将Tab自动转化成空格    [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
+set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
+
+
+" base config
+"set laststatus=2    "始终显示状态栏
+"set softtabstop=2   "一个制表符的长度（可以大于tabstop）
+"set expandtab       "使用空格替代制表符
+"set smarttab        "智能制表符
+"set autoindent      "自动缩进
+"set smartindent     "智能缩进
+set nu              "set nu显示行号
+"set ruler           "显示位置指示器
+"set backupdir=/tmp  "设置备份文件目录
+"set directory=/tmp  "设置临时文件目录
+"set ignorecase      "检索时忽略大小写
+"set hls             "检索时高亮显示匹配项
+"set helplang=cn     "帮助系统设置为中文
+"set foldmethod=syntax "代码折叠
+set background=light " theame
+" colorscheme solarized
+" set background=dark
+" plug
+filetype plugin indent on
+
+
