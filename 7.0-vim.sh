@@ -27,4 +27,4 @@ cp -r nerdtree-4* ~/.vim/bundle/nerdtree
 # apt-vim install -y https://github.com/scrooloose/nerdtree.git
 #Then reload vim, run :Helptags, and check out :help NERD_tree.txt.
 
-echo "Install Done!"=
+echo "Install Done!"
