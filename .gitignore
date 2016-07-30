@@ -5,6 +5,8 @@ tars
 tars/
 git
 *.pyc
+logs
+log
 pyenv/
 #node_modules/
 #public/
