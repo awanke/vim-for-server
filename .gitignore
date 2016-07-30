@@ -3,6 +3,8 @@
 git/*
 tars
 tars/
+*.tar.gz
+*.tar
 git
 *.pyc
 logs
