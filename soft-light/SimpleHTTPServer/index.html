@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>autoRelease</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<form method="post" action="/" id="update">
+    <p><label>环境：<input name="environ" type="text" value="test"/></label></p>
+
+    <p><label>分支：<input name="branch" type="text"/></label></p>
+
+    <p><input type="submit" value="更新"/></p>
+</form>
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+            $('#update').submit(function (e) {
+                e.preventDefault();
+                $.post('/', $(this).serialize(), function (response) {
+                    console.log(response);
+                }, 'json');
+                return false;
+            });
+        });
+    })(jQuery)
+</script>
+</body>
+</html>

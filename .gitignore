@@ -1,0 +1,12 @@
+.idea/
+.git/
+git/*
+tars
+tars/
+git
+*.pyc
+pyenv/
+#node_modules/
+#public/
+
+
