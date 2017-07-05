@@ -1,5 +1,6 @@
 .idea/
 .git/
+soft-light/SimpleHTTPServer/logs/*
 git/*
 tars
 tars/
